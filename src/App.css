@@ -94,7 +94,7 @@
 
 @media screen and (max-width:480px) {
   .App {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   border-radius: 10px;
   margin-left: 0rem;
