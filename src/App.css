@@ -1,38 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* border: 2px solid blue; */
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  height: 70vh;
+  width: 50vw;
+  border-radius: 10px;
+  margin-left: 15rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.Outer{
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.OuterScore{
+  /* border: 2px solid red; */
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: bisque;
+  box-shadow: inset 0 0 10px black;
+  /* color: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.OuterScore h1{
+  /* border: 2px solid red; */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color:rgb(41, 41, 41);
   color: white;
+  height: 15%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.showScoreHeader{
+  /* border: 2px solid blue; */
+  height: 80%;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
 }
 
-.App-link {
-  color: #61dafb;
+
+.headerDiv {
+  /* border: 2px solid red; */
+  height: 20%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.questionDiv {
+  /* border: 2px solid red; */
+  height: 80%;
+  width: 90%;
+  background-color: rgb(136, 133, 133);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.questionDiv button{
+  padding: 0.5rem;
+  width: 70%;
+  border-radius: 10px;
+  border: 2px solid white;
+  background-color: rgb(182, 180, 180);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width:480px) {
+  .App {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  margin-left: 0rem;
+  margin-top: 0rem;
+}
 }
